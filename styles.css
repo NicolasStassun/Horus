@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+*{
+    font-family: 'Alata', sans-serif;
+}
+
+.imagemInicial{
+    background-image:url(BG1.svg); 
+    background-position: center;
+}
+
+#vislumbre{
+    font-family: 'Cinzel Decorative', cursive; 
+    font-weight: bold; 
+    line-height: 67px;
+}
+footer h4 {
+    font-weight: medium;
+    color: white;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #BBBBBB;
+    font-size: 1.125rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+#parte-amarela {
+    cursor: pointer;
+}
+
+#parte-cinza {
+    display: none;
+}
+
+@font-face {
+    font-family: Cinzel;
+    src: url(/Cinzel/Cinzel-VariableFont_wght.ttf);
+    font-family: Alata;
+    src: url(/Alata/Alata-Regular.ttf);
+}
+
+.element {
+    scrollbar-width: thin;
+    scrollbar-color: black transparent;
+}
+
+html ::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+    /* A altura só é vista quando a rolagem é horizontal */
+}
+
+html ::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 2px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: #d8ae45;
+}
+
+/* Estilo para o carrossel e imagens */
+#carousel-container {
+    width: 300px;
+    overflow: hidden;
+}
+
+#carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilo para os botões de navegação */
+.carousel-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+.imagemSobreNos{
+    background-image:url(imageSobreNos.svg);
+    display:flex;
+    justify-content: center;
+}
+.headerSobreNos{
+    margin-top: 20vh;
+}
