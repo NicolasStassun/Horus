@@ -42,7 +42,7 @@
         <!-- Implement the carousel -->
         <div class="flex w-full items-center justify-center">
             <a class="cursor-pointer scale-x-[-1]"
-                onclick="moveSlide(-1)"><img src="seta.svg"></a>
+                onclick="animateLeft()"><img src="seta.svg"></a>
             <div class="w-[1300px] flex items-center justify-center gap-[93px]">
                 
                 <!-- The previous button -->
@@ -93,7 +93,7 @@
             </div>
             <!-- The next button -->
             <a class="cursor-pointer"
-                onclick="moveSlide(1)"><img src="seta.svg"></a>
+                onclick="animateRight()"><img src="seta.svg"></a>
         </div>
         <br>
 
@@ -264,9 +264,24 @@ function currentSlide(n) {
     showSlide(slideIndex = n);
 }
 
-function showSlide(n) {
-    let i;
+async function animateLeft(){
     const slides = document.getElementsByClassName("slide");
+    let n = slideIndex-1;
+    await moveSlide(-1); 
+
+    slides[n].classList.add("slideDownRight");
+    slides[n-1].classList.add("slideUpRight");
+}
+
+async function animateRight(){
+    const slides = document.getElementsByClassName("slide");
+    let n = slideIndex-1;
+    await moveSlide(1); 
+}
+
+function showSlide(n) {
+    const slides = document.getElementsByClassName("slide");
+    let i;
     const dots = document.getElementsByClassName('dot');
 
     if (n > slides.length) { 
@@ -282,7 +297,6 @@ function showSlide(n) {
     for (i = 0; i < slides.length; i++) {
         if(n - 1 < 1){
             if(i == n - 1){
-                slides[i].classList.remove('hidden');
                 slides[i].classList.remove("cardPequeno")
                 slides[i].classList.add("cardGrande")
                 slides[i].style.order = 2;
@@ -301,7 +315,6 @@ function showSlide(n) {
             }
         } else if(n + 1 > slides.length){
              if(i == n - 1){
-                slides[i].classList.remove('hidden');
                 slides[i].classList.remove("cardPequeno")
                 slides[i].classList.add("cardGrande")
                 slides[i].style.order = 2;
@@ -320,7 +333,6 @@ function showSlide(n) {
             }
         } else{
             if(i == n - 1){
-                slides[i].classList.remove('hidden');
                 slides[i].classList.remove("cardPequeno")
                 slides[i].classList.add("cardGrande")
                 slides[i].style.order = 2;

@@ -122,3 +122,58 @@ html ::-webkit-scrollbar-thumb {
 .cardPequeno > div > h6{
     font-size: 16px;
 }
+
+.slideDownLeft{
+    animation: slideDownLeft 1s ease-in;
+}
+.slideDownRight{
+    animation: slideDownRight 1s ease-in;
+}
+.slideUpLeft{
+    animation: slideUpLeft 1s ease-in;
+}
+.slideUpRight{
+    animation: slideUpRight 1s ease-in;
+}
+
+@keyframes slideUpLeft{
+    0%{
+        opacity: 0.5;
+        transform: scale(0.8) translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateX(0px);
+    }
+}
+@keyframes slideUpRight{
+    0%{
+        opacity: 0.5;
+        transform: scale(0.8) translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateX(0px);
+    }
+}
+
+@keyframes slideDownLeft{
+    0%{
+        opacity: 0.5;
+        transform: scale(1.4) translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateX(0px);
+    }
+}
+@keyframes slideDownRight{
+    0%{
+        opacity: 0.5;
+        transform: scale(1.4) translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateX(0px);
+    }
+}
