@@ -97,3 +97,28 @@ html ::-webkit-scrollbar-thumb {
 .headerSobreNos{
     margin-top: 20vh;
 }
+
+.cardGrande{
+    height: 500px;
+    width: 450px;
+    opacity: 1;
+}
+
+.cardPequeno{
+    height: 350px;
+    width: 300px;
+    opacity: 0.5;
+}
+
+.cardGrande > div > p{
+    font-size: 20px;
+}
+.cardGrande > div > h6{
+    font-size: 24px;
+}
+.cardPequeno > div > p{
+    font-size: 12px;
+}
+.cardPequeno > div > h6{
+    font-size: 16px;
+}

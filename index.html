@@ -40,57 +40,60 @@
         </h1>
 
         <!-- Implement the carousel -->
-        <div class="flex w-full items-center">
-            <div class="relative w-[70%] mx-auto flex  justify-center">
-                <div class="slide relative flex flex-col" id="0">
-                    <img class="w-[100%] h-[500px] object-cover"
-                        src="https://universopsn.com.br/wp-content/uploads/2022/07/God-of-War-Ragnarok-imagem-oficial.webp">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black text-left text-white">
-
-                        Godofor
-                        <br>
-                        SERVER PAWAWIDNWAOIDNOAWNDIAWNDIOAWNOIDNAWIDN
-                    </div>
-                </div>
-
-                <div class="slide relative"  id="1">
-                    <img class="w-full h-[500px] object-cover"
-                        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-left text-white">Flower Two
-                        Caption</div>
-                </div>
-
-                <div class="slide relative"  id="2">
-                    <img class="w-full h-[500px] object-cover"
-                        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-left text-white">Flower Three
-                        Caption
-                    </div>
-                </div>
-                <div class="slide relative"  id="2">
-                    <img class="w-full h-[500px] object-cover"
-                        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-left text-white">Flower Three
-                        AAAAAAAAAAA
-                    </div>
-                </div>
-                <div class="slide relative"  id="2">
-                    <img class="w-full h-[500px] object-cover"
-                        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-left text-white">Flower Three
-                        BBBBBBBBBBB
-                    </div>
-                </div>
-
+        <div class="flex w-full items-center justify-center">
+            <a class="cursor-pointer scale-x-[-1]"
+                onclick="moveSlide(-1)"><img src="seta.svg"></a>
+            <div class="w-[1300px] flex items-center justify-center gap-[93px]">
+                
                 <!-- The previous button -->
-                <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
-                    onclick="moveSlide(-1)">❮</a>
 
-                <!-- The next button -->
-                <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
-                    onclick="moveSlide(1)">❯</a>
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500">
+                    <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)]"
+                        src="https://universopsn.com.br/wp-content/uploads/2022/07/God-of-War-Ragnarok-imagem-oficial.webp">
+                    <div class="bottom-0 px-5 py-3  text-left text-white h-2/5 flex-wrap">
+                        <h6 class="mb-6">Godofor</h6>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                    </div>
+                </div>
 
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"   id="1">
+                    <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)]"
+                        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg">
+                    <div class=" bottom-0 px-5 py-3 bg-[#252525] text-left text-white h-2/5 flex-wrap">
+                        <h6 class="mb-6">Godofor</h6>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                    </div>
+                </div>
+
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500" id="2">
+                    <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)]"
+                        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
+                    <div class=" bottom-0 px-5 py-3 bg-[#252525] text-left text-white h-2/5 flex-wrap">
+                        <h6 class="mb-6">Godofor</h6>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                    </div>
+                </div>
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"   id="2">
+                    <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)]"
+                        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
+                    <div class=" bottom-0 px-5 py-3 bg-[#252525] text-left text-white h-2/5 flex-wrap">
+                        <h6 class="mb-6">Godofor</h6>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                    </div>
+                </div>
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"   id="2">
+                    <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] "
+                        src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
+                    <div class=" bottom-0 px-5 py-3 bg-[#252525] text-left text-white h-2/5 flex-wrap">
+                        <h6 class="mb-6">Godofor</h6>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                    </div>
+                </div>
+    
             </div>
+            <!-- The next button -->
+            <a class="cursor-pointer"
+                onclick="moveSlide(1)"><img src="seta.svg"></a>
         </div>
         <br>
 
@@ -155,7 +158,7 @@
                 <div class="flex items-center align-center">
                     <div class="w-[50vw] h-[250px] bg-[#252525] rounded-md flex flex-col">
                         <h1 class="text-white text-4xl pt-8 pl-8">Nicolas Stassun</h1>
-                        <p class="text-[#BBBBBB] pt-2 pl-8 w-[45vw] text-2xl">"Cada partida é uma oportunidade de
+                        <p class="text-[#939393] pt-2 pl-8 w-[45vw] text-2xl">"Cada partida é uma oportunidade de
                             superação e aprendizado. Continue jogando, continue crescendo! Masquadi, pare de jogar."</p>
                     </div>
                     <div class="w-[250px] h-[250px] bg-[#B99439] ml-8 rounded-md flex items-center justify-center">
@@ -170,14 +173,14 @@
                     </div>
                     <div class="w-[50vw] h-[250px] bg-[#252525] rounded-md flex flex-col">
                         <h1 class="text-white text-4xl pt-8 pl-8">Nicolas Stassun</h1>
-                        <p class="text-[#BBBBBB] pt-2 pl-8 w-[45vw] text-2xl">Lorem ipsum dolor sit am</p>
+                        <p class="text-[#939393] pt-2 pl-8 w-[45vw] text-2xl">Lorem ipsum dolor sit am</p>
                     </div>
                 </div>
 
                 <div class="flex items-center align-center">
                     <div class="w-[50vw] h-[250px] bg-[#252525] rounded-md flex flex-col">
                         <h1 class="text-white text-4xl pt-8 pl-8">Nicolas Stassun</h1>
-                        <p class="text-[#BBBBBB] pt-2 pl-8 w-[45vw] text-2xl">Lorem ipsum dolor sit am</p>
+                        <p class="text-[#939393] pt-2 pl-8 w-[45vw] text-2xl">Lorem ipsum dolor sit am</p>
                     </div>
                     <div class="w-[250px] h-[250px] bg-[#B99439] ml-8 rounded-md flex items-center justify-center">
                         <img src="Stassun.PNG" class="w-[250px] h-[250px] rounded-md">
@@ -191,14 +194,14 @@
                     </div>
                     <div class="w-[50vw] h-[250px] bg-[#252525] rounded-md flex flex-col">
                         <h1 class="text-white text-4xl pt-8 pl-8">Nicolas Stassun</h1>
-                        <p class="text-[#BBBBBB] pt-2 pl-8 w-[45vw] text-2xl">Lorem ipsum dolor sit am</p>
+                        <p class="text-[#939393] pt-2 pl-8 w-[45vw] text-2xl">Lorem ipsum dolor sit am</p>
                     </div>
                 </div>
 
                 <div class="flex items-center align-center">
                     <div class="w-[50vw] h-[250px] bg-[#252525] rounded-md flex flex-col">
                         <h1 class="text-white text-4xl pt-8 pl-8">Jonatas Gonçalves</h1>
-                        <p class="text-[#BBBBBB] pt-2 pl-8 w-[45vw] text-2xl">“Sempre gostei de histórias, os jogos são
+                        <p class="text-[#939393] pt-2 pl-8 w-[45vw] text-2xl">“Sempre gostei de histórias, os jogos são
                             como anfitriões de um teatro inimaginável, onde você mesmo pode contar a sua história”</p>
                     </div>
                     <div class="w-[250px] h-[250px] bg-[#B99439] ml-8 rounded-md flex items-center justify-center">
@@ -266,20 +269,32 @@ function showSlide(n) {
     const slides = document.getElementsByClassName("slide");
     const dots = document.getElementsByClassName('dot');
 
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    if (n > slides.length) { 
+        slideIndex = 1;
+        n = slideIndex;
+    }
+    if (n < 1) { 
+        slideIndex = slides.length;
+        n = slideIndex; 
+    }
 
     // hide all slides
     for (i = 0; i < slides.length; i++) {
         if(n - 1 < 1){
             if(i == n - 1){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardPequeno")
+                slides[i].classList.add("cardGrande")
                 slides[i].style.order = 2;
             } else if(i == n){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardGrande")
+                slides[i].classList.add("cardPequeno")
                 slides[i].style.order = 3;
             } else if(i == (slides.length-1)){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardGrande")
+                slides[i].classList.add("cardPequeno")
                 slides[i].style.order = 1;
             } else{
                 slides[i].classList.add('hidden');
@@ -287,35 +302,40 @@ function showSlide(n) {
         } else if(n + 1 > slides.length){
              if(i == n - 1){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardPequeno")
+                slides[i].classList.add("cardGrande")
                 slides[i].style.order = 2;
-            } else if(i != 0){
+            } else if(i == 0){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardGrande")
+                slides[i].classList.add("cardPequeno")
                 slides[i].style.order = 3;
-            } else if(i == i != n - 2){
+            } else if(i == n - 2){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardGrande")
+                slides[i].classList.add("cardPequeno")
                 slides[i].style.order = 1;
             } else{
                 slides[i].classList.add('hidden');
             }
         } else{
-
             if(i == n - 1){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardPequeno")
+                slides[i].classList.add("cardGrande")
                 slides[i].style.order = 2;
-            } else if(i != n){
+            } else if(i == n){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardGrande")
+                slides[i].classList.add("cardPequeno")
                 slides[i].style.order = 3;
-            } else if(i == i != n - 2){
+            } else if(i == n - 2){
                 slides[i].classList.remove('hidden');
+                slides[i].classList.remove("cardGrande")
+                slides[i].classList.add("cardPequeno")
                 slides[i].style.order = 1;
             } else{
                 slides[i].classList.add('hidden');
-            }
-
-            if(i != n-1 && i != n && i != n-2){
-                slides[i].classList.add('hidden');
-            }else{
-                slides[i].classList.remove('hidden');
             }
         }
     }
