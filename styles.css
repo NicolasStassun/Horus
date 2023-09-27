@@ -124,19 +124,31 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .slideDownLeft{
-    animation: slideDownLeft 1s ease-in;
+    animation: slideDownLeft 300ms ease-in;
 }
 .slideDownRight{
-    animation: slideDownRight 1s ease-in;
+    animation: slideDownRight 300ms ease-in;
 }
 .slideUpLeft{
-    animation: slideUpLeft 1s ease-in;
+    animation: slideUpLeft 300ms ease-in;
 }
 .slideUpRight{
-    animation: slideUpRight 1s ease-in;
+    animation: slideUpRight 300ms ease-in;
+}
+.slideShowLeft{
+    animation: slideShowLeft 300ms ease-in;
+}
+.slideShowRight{
+    animation: slideShowRight 300ms ease-in;
+}
+.slideHiddeLeft{
+    animation: slideHiddeLeft 300ms ease-in;
+}
+.slideHiddeRight{
+    animation: slideHiddeRight 300ms ease-in;
 }
 
-@keyframes slideUpLeft{
+@keyframes slideUpRight{
     0%{
         opacity: 0.5;
         transform: scale(0.8) translateX(200px);
@@ -175,5 +187,47 @@ html ::-webkit-scrollbar-thumb {
     100%{
         opacity: 0.5;
         transform: scale(1) translateX(0px);
+    }
+}
+
+@keyframes slideHiddeRight{
+    0%{
+        opacity: 0.5;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+}
+@keyframes slideShowRight{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 0.5;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideHiddeLeft{
+    0%{
+        opacity: 0.5;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+}
+@keyframes slideShowLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 0.5;
+        transform: translateX(0px);
     }
 }

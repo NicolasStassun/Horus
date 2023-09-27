@@ -41,10 +41,9 @@
 
         <!-- Implement the carousel -->
         <div class="flex w-full items-center justify-center">
-            <a class="cursor-pointer scale-x-[-1]"
-                onclick="animateLeft()"><img src="seta.svg"></a>
+            <a class="cursor-pointer scale-x-[-1]" onclick="animateLeft()"><img src="seta.svg"></a>
             <div class="w-[1300px] flex items-center justify-center gap-[93px]">
-                
+
                 <!-- The previous button -->
 
                 <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500">
@@ -52,48 +51,56 @@
                         src="https://universopsn.com.br/wp-content/uploads/2022/07/God-of-War-Ragnarok-imagem-oficial.webp">
                     <div class="bottom-0 px-5 py-3  text-left text-white h-2/5 flex-wrap">
                         <h6 class="mb-6">Godofor</h6>
-                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia
+                        </p>
                     </div>
                 </div>
 
-                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"   id="1">
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"
+                    id="1">
                     <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)]"
                         src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-2.jpeg">
                     <div class=" bottom-0 px-5 py-3 bg-[#252525] text-left text-white h-2/5 flex-wrap">
                         <h6 class="mb-6">Godofor</h6>
-                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia
+                        </p>
                     </div>
                 </div>
 
-                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500" id="2">
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"
+                    id="2">
                     <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)]"
                         src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
                     <div class=" bottom-0 px-5 py-3 bg-[#252525] text-left text-white h-2/5 flex-wrap">
                         <h6 class="mb-6">Godofor</h6>
-                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia
+                        </p>
                     </div>
                 </div>
-                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"   id="2">
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"
+                    id="2">
                     <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)]"
                         src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
                     <div class=" bottom-0 px-5 py-3 bg-[#252525] text-left text-white h-2/5 flex-wrap">
                         <h6 class="mb-6">Godofor</h6>
-                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia
+                        </p>
                     </div>
                 </div>
-                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"   id="2">
+                <div class="slide bg-[#252525] rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] shadow-red-500"
+                    id="2">
                     <img class="h-3/5 rounded-md drop-shadow-[0_0px_10px_rgba(0,0,0,0.25)] "
                         src="https://www.kindacode.com/wp-content/uploads/2022/07/flower-3.jpeg">
                     <div class=" bottom-0 px-5 py-3 bg-[#252525] text-left text-white h-2/5 flex-wrap">
                         <h6 class="mb-6">Godofor</h6>
-                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia</p>
+                        <p class="text-[#939393]">Descrição do godofor como um dos nosso mais novos jogos da franquia
+                        </p>
                     </div>
                 </div>
-    
+
             </div>
             <!-- The next button -->
-            <a class="cursor-pointer"
-                onclick="animateRight()"><img src="seta.svg"></a>
+            <a class="cursor-pointer" onclick="animateRight()"><img src="seta.svg"></a>
         </div>
         <br>
 
@@ -239,117 +246,153 @@
     </footer>
 
     <script>
-        
-
-// set the default active slide to the first one
-let slideIndex = 1;
-showSlide(slideIndex);
-
-// change slide with the prev/next button
-async function moveSlide(moveStep) {
-    await showSlide(slideIndex += moveStep);
-}
 
 
-async function animateLeft(){
-    const slides = document.getElementsByClassName("slide");
-    await moveSlide(-1); 
-    console.log(slideIndex);
+        // set the default active slide to the first one
+        let slideIndex = 1;
+        showSlide(slideIndex);
 
-    if(slideIndex == slides.length){
-        slides[0].classList.add("slideDownRight");
-        slides[slides.length - 1].classList.add("slideUpRight");
-    } else{
-        slides[slideIndex].classList.add("slideDownRight");
-        slides[slideIndex-1].classList.add("slideUpRight");
-    }
-}
+        // change slide with the prev/next button
+        async function moveSlide(moveStep) {
+            await showSlide(slideIndex += moveStep);
+        }
 
-async function animateRight(){
-    const slides = document.getElementsByClassName("slide");
-    await moveSlide(1); 
-    console.log(slideIndex);
-    if(slideIndex - 1 < 1){
-        slides[slideIndex-1].classList.add("slideUpLeft");
-        slides[slides.length-1].classList.add("slideDownLeft");
-    }  else{
-        slides[slideIndex-1].classList.add("slideUpLeft");
-        slides[slideIndex-2].classList.add("slideDownLeft");
-    }
-}
+        function removerAnimacoes(element) {
+            element.classList.remove("slideUpRight");
+            element.classList.remove("slideDownRight");
+            element.classList.remove("slideUpLeft");
+            element.classList.remove("slideDownLeft");
 
-function showSlide(n) {
-    const slides = document.getElementsByClassName("slide");
-    let i;
+            element.classList.remove("slideShowRight");
+            element.classList.remove("slideHiddeRight");
+            element.classList.remove("slideShowLeft");
+            element.classList.remove("slideHiddeLeft");
+        }
 
-    if (n > slides.length) { 
-        slideIndex = 1;
-        n = slideIndex;
-    }
-    if (n < 1) { 
-        slideIndex = slides.length;
-        n = slideIndex; 
-    }
+        async function animateLeft() {
+            const slides = document.getElementsByClassName("slide");
+            await moveSlide(-1);
+            console.log(slideIndex);
 
-    // hide all slides
-    for (i = 0; i < slides.length; i++) {
-        if(n - 1 < 1){
-            if(i == n - 1){
-                slides[i].classList.remove("cardPequeno")
-                slides[i].classList.add("cardGrande")
-                slides[i].style.order = 2;
-            } else if(i == n){
-                slides[i].classList.remove('hidden');
-                slides[i].classList.remove("cardGrande")
-                slides[i].classList.add("cardPequeno")
-                slides[i].style.order = 3;
-            } else if(i == (slides.length-1)){
-                slides[i].classList.remove('hidden');
-                slides[i].classList.remove("cardGrande")
-                slides[i].classList.add("cardPequeno")
-                slides[i].style.order = 1;
-            } else{
-                slides[i].classList.add('hidden');
-            }
-        } else if(n + 1 > slides.length){
-             if(i == n - 1){
-                slides[i].classList.remove("cardPequeno")
-                slides[i].classList.add("cardGrande")
-                slides[i].style.order = 2;
-            } else if(i == 0){
-                slides[i].classList.remove('hidden');
-                slides[i].classList.remove("cardGrande")
-                slides[i].classList.add("cardPequeno")
-                slides[i].style.order = 3;
-            } else if(i == n - 2){
-                slides[i].classList.remove('hidden');
-                slides[i].classList.remove("cardGrande")
-                slides[i].classList.add("cardPequeno")
-                slides[i].style.order = 1;
-            } else{
-                slides[i].classList.add('hidden');
-            }
-        } else{
-            if(i == n - 1){
-                slides[i].classList.remove("cardPequeno")
-                slides[i].classList.add("cardGrande")
-                slides[i].style.order = 2;
-            } else if(i == n){
-                slides[i].classList.remove('hidden');
-                slides[i].classList.remove("cardGrande")
-                slides[i].classList.add("cardPequeno")
-                slides[i].style.order = 3;
-            } else if(i == n - 2){
-                slides[i].classList.remove('hidden');
-                slides[i].classList.remove("cardGrande")
-                slides[i].classList.add("cardPequeno")
-                slides[i].style.order = 1;
-            } else{
-                slides[i].classList.add('hidden');
+            for (let slide of slides) {
+                await removerAnimacoes(slide);
+                if (slide.style.order == 1) {
+                    slide.classList.add("slideShowLeft")
+                } else if (slide.style.order == 2) {
+                    slide.classList.add("slideUpRight");
+                } else if (slide.style.order == 3) {
+                    slide.classList.add("slideDownRight");
+                }
             }
         }
-    }
-}
+
+        async function animateRight() {
+            const slides = document.getElementsByClassName("slide");
+            await moveSlide(1);
+            console.log(slideIndex);
+
+            let i = 0;
+            for (let slide of slides) {
+                await removerAnimacoes(slide);
+                if (slide.style.order == 1) {
+                    slide.classList.add("slideDownLeft");
+                } else if (slide.style.order == 2) {
+                    slide.classList.add("slideUpLeft");
+                    if (i == 0) {
+                        slides[3].classList.add("slideHiddeLeft")
+                    } else if (i == 1) {
+                        slides[4].classList.add("slideHiddeLeft")
+                    } else if (i == slides.length) {
+                        slides[2].classList.add("slideHiddeLeft")
+                    } else if (i == slides.length - 1) {
+                        slides[1].classList.add("slideHiddeLeft")
+                    } else {
+                        slides[i + 2].classList.add("slideHiddeLeft")
+                    }
+                } else if (slide.style.order == 3) {
+                    slide.classList.add("slideShowRight")
+                }
+
+
+                i++;
+            }
+        }
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName("slide");
+            let i;
+
+            if (n > slides.length) {
+                slideIndex = 1;
+                n = slideIndex;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+                n = slideIndex;
+            }
+
+            // hide all slides
+            for (i = 0; i < slides.length; i++) {
+                if (n - 1 < 1) {
+                    if (i == n - 1) {
+                        slides[i].classList.remove("cardPequeno")
+                        slides[i].classList.add("cardGrande")
+                        slides[i].style.order = 2;
+                    } else if (i == n) {
+                        slides[i].classList.remove('hidden');
+                        slides[i].classList.remove("cardGrande")
+                        slides[i].classList.add("cardPequeno")
+                        slides[i].style.order = 3;
+                    } else if (i == (slides.length - 1)) {
+                        slides[i].classList.remove('hidden');
+                        slides[i].classList.remove("cardGrande")
+                        slides[i].classList.add("cardPequeno")
+                        slides[i].style.order = 1;
+                    } else {
+                        slides[i].classList.add('hidden');
+                        slides[i].style.order = 4;
+                    }
+                } else if (n + 1 > slides.length) {
+                    if (i == n - 1) {
+                        slides[i].classList.remove("cardPequeno")
+                        slides[i].classList.add("cardGrande")
+                        slides[i].style.order = 2;
+                    } else if (i == 0) {
+                        slides[i].classList.remove('hidden');
+                        slides[i].classList.remove("cardGrande")
+                        slides[i].classList.add("cardPequeno")
+                        slides[i].style.order = 3;
+                    } else if (i == n - 2) {
+                        slides[i].classList.remove('hidden');
+                        slides[i].classList.remove("cardGrande")
+                        slides[i].classList.add("cardPequeno")
+                        slides[i].style.order = 1;
+                    } else {
+                        slides[i].classList.add('hidden');
+                        slides[i].style.order = 4;
+                    }
+                } else {
+                    if (i == n - 1) {
+                        slides[i].classList.remove("cardPequeno")
+                        slides[i].classList.add("cardGrande")
+                        slides[i].style.order = 2;
+                    } else if (i == n) {
+                        slides[i].classList.remove('hidden');
+                        slides[i].classList.remove("cardGrande")
+                        slides[i].classList.add("cardPequeno")
+                        slides[i].style.order = 3;
+                    } else if (i == n - 2) {
+                        slides[i].classList.remove('hidden');
+                        slides[i].classList.remove("cardGrande")
+                        slides[i].classList.add("cardPequeno")
+                        slides[i].style.order = 1;
+                    } else {
+                        slides[i].classList.add('hidden');
+                        slides[i].style.order = 4;
+                    }
+                }
+            }
+        }
     </script>
 </body>
 
