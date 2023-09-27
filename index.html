@@ -97,15 +97,6 @@
         </div>
         <br>
 
-        <!-- The dots -->
-        <div class="flex justify-center items-center space-x-5">
-            <div class="dot w-2 h-2  rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
-            <div class="dot w-2 h-2  rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
-            <div class="dot w-2 h-2  rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
-            <div class="dot w-2 h-2  rounded-full cursor-pointer" onclick="currentSlide(4)"></div>
-            <div class="dot w-2 h-2  rounded-full cursor-pointer" onclick="currentSlide(5)"></div>
-        </div>
-
     </div>
     <div class="h-screen w-full bg-[#3C3C3C]">
         <div class="h-full flex items-center justify-center flex-col">
@@ -255,34 +246,41 @@ let slideIndex = 1;
 showSlide(slideIndex);
 
 // change slide with the prev/next button
-function moveSlide(moveStep) {
-    showSlide(slideIndex += moveStep);
+async function moveSlide(moveStep) {
+    await showSlide(slideIndex += moveStep);
 }
 
-// change slide with the dots
-function currentSlide(n) {
-    showSlide(slideIndex = n);
-}
 
 async function animateLeft(){
     const slides = document.getElementsByClassName("slide");
-    let n = slideIndex-1;
     await moveSlide(-1); 
+    console.log(slideIndex);
 
-    slides[n].classList.add("slideDownRight");
-    slides[n-1].classList.add("slideUpRight");
+    if(slideIndex == slides.length){
+        slides[0].classList.add("slideDownRight");
+        slides[slides.length - 1].classList.add("slideUpRight");
+    } else{
+        slides[slideIndex].classList.add("slideDownRight");
+        slides[slideIndex-1].classList.add("slideUpRight");
+    }
 }
 
 async function animateRight(){
     const slides = document.getElementsByClassName("slide");
-    let n = slideIndex-1;
     await moveSlide(1); 
+    console.log(slideIndex);
+    if(slideIndex - 1 < 1){
+        slides[slideIndex-1].classList.add("slideUpLeft");
+        slides[slides.length-1].classList.add("slideDownLeft");
+    }  else{
+        slides[slideIndex-1].classList.add("slideUpLeft");
+        slides[slideIndex-2].classList.add("slideDownLeft");
+    }
 }
 
 function showSlide(n) {
     const slides = document.getElementsByClassName("slide");
     let i;
-    const dots = document.getElementsByClassName('dot');
 
     if (n > slides.length) { 
         slideIndex = 1;
@@ -351,17 +349,6 @@ function showSlide(n) {
             }
         }
     }
-
-
-    // remove active status from all dots
-    for (i = 0; i < dots.length; i++) {
-        dots[i].classList.remove('bg-yellow-500');
-        dots[i].classList.add('bg-white');
-    }
-
-    // highlight the active dot
-    dots[slideIndex - 1].classList.remove('bg-white');
-    dots[slideIndex - 1].classList.add('bg-yellow-500');
 }
     </script>
 </body>
